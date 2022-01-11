@@ -1,78 +1,88 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-    <title>Ana's World</title>
-  </head>
-  <body>
-    <header>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Ana's World</title>
+</head>
+
+<body>
+  <header>
 
 
-<!--    navbar-->
-  <nav class="navbar navbar-expand-sm navbar-light bg-dark">
-	  <div class="container-fluid ">
-		<a class="navbar-brand " href="#"></a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-		  <ul class="navbar-nav ">
-			<li class="nav-item">
-			  <a class="nav-link active" aria-current="page" href="#"><img src="assests/git.png" alt="" width="30" height="30"></a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#"><img src="assests/linkeden.png" alt="" width="30" height="30"></a>
-			</li>			
-		  </ul>		  
-		</div>
-	  </div>
-	</nav>
-  
-<!--	end navbar-->
-</header>
-<!--    CAROUSEL -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-      <img src="assests/carousel_1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
-        <h1 class="Anabil">I'm Anabil, </h1>
-        <div class="flex">
-        <p class="header-sub-title2 blink">|</p><p class="header-sub-title" id="word"></p>
+    <!--    navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+      <div class="container-fluid ">
+        <a class="navbar-brand " href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><img src="assests/git.png" alt="" width="30"
+                  height="30"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="assests/linkeden.png" alt="" width="30" height="30"></a>
+            </li>
+          </ul>
         </div>
-		
-	</h1>
+      </div>
+    </nav>
+
+    <!--	end navbar-->
+  </header>
+  <!--    CAROUSEL -->
+
+  <div class="container-fluid">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause=false>
+      <div class="carousel-inner">
+        <div class="carousel-item active "  data-bs-interval= 15300>
+          <img src="assests/carousel_1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
+            <h1 class="Anabil">I'm Anabil, </h1>
+            <div class="flex">
+              <p class="header-sub-title2 blink">|</p>
+              <p class="header-sub-title" id="word"></p>
+            </div>
+
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item " data-bs-interval= 15000>
+          <img src="assests/1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
+            <section class="animation-box">
+              <div class="first-text">This is an example text</div>
+              <div class="second-text">This is another example text</div>
+              <div class="third-text">This is an example of vertical text</div>
+              <div class="fourth-text">I will not move, just fade</div>
+              <div class="fifth-text">Final text, now I am done</div>
+            </section>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
       </div>
     </div>
-    <!-- <div class="carousel-item ">
-      <img src="assests/carousel.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
-      <section class="animation-box">
-    <div class="first-text">This is an example text</div>
-    <div class="second-text">This is another example text</div>
-    <div class="third-text">This is an example of vertical text</div>
-    <div class="fourth-text">I will not move, just fade</div>
-    <div class="fifth-text">Final text, now I am done</div>
-  </section>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div> -->
-<!-- END CAROUSEL-->
+    <div class="container-fluid"></div>
+    <!-- END CAROUSEL -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
-<!--     Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--     Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
@@ -80,6 +90,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="js/typewriter.js"></script>
-  </body>
-</html>
+</body>
 
+</html>
