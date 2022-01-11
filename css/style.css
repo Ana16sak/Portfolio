@@ -1,15 +1,45 @@
 
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 html, body {
-	background-color: #000;
+	background-color: #fff;
+  justify-content: center;
+  align-items: center;
 }
-
+/* .container {
+  margin-top: 50px;
+  box-shadow: 0 0 30px black;
+  padding:0 15px 0 15px;
+} */
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 98%;
+  animation: fade 0.5s ease-out 0.2s forwards 1;
+}
+.card:nth-child(even){
+  height: 54.7vw;
+}
+.card:nth-child(odd){
+  height: 30vw;
+}
+@keyframes fade {
+  from { opacity: 0; }
+    to   { opacity: 1; }
+}
 h1.Anabil{
   color: #fff;
 	font-family: "Courier";
 	text-decoration: none;
   font-size: 7vw;
   padding-bottom: 1%;
+  animation: topFadeIn 1s linear forwards 1;
+}
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  animation: rightFadeIn 1s linear forwards 1
 }
 
 h1, a, p {
@@ -75,6 +105,19 @@ animation-box {
     opacity: 0;
   }
 }
+@keyframes topFadeIn {
+  0% {
+    position: absolute;
+    top: -3vw;
+    opacity: 0;
+  }
+
+  100% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+}
 
 @keyframes bottomFadeOut {
   0% {
@@ -129,6 +172,19 @@ animation-box {
   100% {
     opacity: 0;
     right: 10rem;
+  }
+}
+@keyframes rightFadeIn {
+  0% {
+    position: absolute;
+    right: -3vw;
+    opacity: 0;
+  }
+
+  100% {
+    position: absolute;
+    right: 0vw;
+    opacity: 1;
   }
 }
 
@@ -209,4 +265,112 @@ animation-box {
   animation-name: bottomFadeOut;
   animation-delay: 10s;
   animation-duration: 9s;
+}
+
+.circle{
+  height: 1vw;
+  width: 1vw;
+  border-radius: 50%;
+  background-color: beige;
+  margin: 15vw;
+  animation: grow 2s cubic-bezier(1,.01,.52,.68) forwards 1;
+}
+.circle2{
+  height: 1vw;
+  width: 1vw;
+  border-radius: 50%;
+  background-color: beige;
+  animation: grow 2s cubic-bezier(1,.01,.52,.68) forwards 1;
+  position: relative;
+  top:-16vw;
+  left: 15vw;
+}
+.WrapperL{
+  animation: slideYL 2s linear forwards 1;
+}
+@keyframes slideYL {
+  0%{
+    transform: translateY(0vw);
+  }
+  25%{
+    transform: translateY(-10vw);
+  }
+  50%{
+    transform: translateY(10vw);
+  }
+  75%{
+    transform: translateY(-10vw);
+  }
+  100%{
+    transform: translateX(0vw);
+  }
+  
+}
+.Wrapper2L{
+  animation: slideL 2s cubic-bezier(1,.01,.52,.68) forwards 1;
+}
+@keyframes slideL {
+  0%{
+    transform: translateX(0vw);
+  }
+  25%{
+    transform: translateX(-40vw);
+  }
+  100%{
+    transform: translateX(30vw);
+  }
+  
+}
+.container-Anabil{
+  width: 100%;
+  height: 30vw;
+  background-color: crimson;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.Wrapper2{
+  animation: slide 2s cubic-bezier(1,.01,.52,.68) forwards 1;
+}
+.Wrapper{
+  animation: slideY 2s linear forwards 1;
+}
+@keyframes slide {
+  0%{
+    transform: translateX(0vw);
+  }
+  25%{
+    transform: translateX(40vw);
+  }
+  100%{
+    transform: translateX(-30vw);
+  }
+  
+}
+
+@keyframes slideY {
+  0%{
+    transform: translateY(0vw);
+  }
+  25%{
+    transform: translateY(10vw);
+  }
+  50%{
+    transform: translateY(-10vw);
+  }
+  75%{
+    transform: translateY(10vw);
+  }
+  100%{
+    transform: translateX(0vw);
+  }
+  
+}
+@keyframes grow {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(15);
+  }
 }

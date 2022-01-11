@@ -37,3 +37,23 @@ function deletingEffect() {
 };
 
 typingEffect();
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+};
+
+// listen for scroll event
+$(window).scroll(function () {
+  // check if element is scrolled into view
+  if (isScrolledIntoView($('#animated_text'))) {
+    // element is scrolled into view, add animation class
+    $('#animated_text').addClass('animation');
+  }
+});
