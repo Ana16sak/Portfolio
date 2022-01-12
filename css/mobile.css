@@ -1,0 +1,37 @@
+@media only screen and (max-device-width: 800px){
+    .show-mobile{
+        display: inline-block;
+    }
+    
+    .card {
+        background: #fff;
+        border-radius: 2px;
+        display: inline-block;
+        position: relative;
+        width: 95%;
+        animation: fade 0.5s ease-out 0.2s forwards 1;
+        height: 53vw;
+        left: 2.5vw;
+    }
+    .card-5 {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        animation: rightFadeIn 1s linear forwards 1
+      }
+      
+    .education{
+        background: #fff;
+        border-radius: 2px;
+        display: inline-block;
+        margin: 1rem;
+        position: relative;
+        width: 75%;
+        aspect-ratio: 260/410;
+        animation: fade 0.5s ease-out 0.2s forwards 1;
+        height: auto;
+        left: 7vw;
+        
+    }
+    .show-website{
+        display: none;
+    }
+}
