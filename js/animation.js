@@ -4,9 +4,9 @@ const observer = new IntersectionObserver(entries => {
     // If the element is visible
     if (entry.isIntersecting) {
       // Add the animation class
-      entry.target.classList.add('square-animation');
+      entry.target.classList.add('.circle-grow');
     }
   });
 });
 
-observer.observe(document.querySelector('.square'));
+observer.observe(document.querySelector('.scroll'));

@@ -300,8 +300,11 @@ animation-box {
     border-radius: 50%;
     background-color: beige;
     margin: 15vw;
-    animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
     
+    
+  }
+  .circle-grow{
+    animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
   }
   .circle2 {
     height: 1vw;
@@ -311,7 +314,6 @@ animation-box {
     position: relative;
     top: -16vw;
     left: 15vw;
-    animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
   }
 
   .WrapperL {
