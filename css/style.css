@@ -278,6 +278,7 @@ animation-box {
   .show-website {
     display: grid;
   }
+
   .card {
     background: #fff;
     border-radius: 2px;
@@ -293,7 +294,7 @@ animation-box {
     height: 30vw;
   }
 
-  
+
 
   .circle {
     height: 1vw;
@@ -301,19 +302,21 @@ animation-box {
     border-radius: 50%;
     background-color: beige;
     margin: 15vw;
-    
-    
+
+
   }
-  .circle-grow{
+
+  .circle-grow {
     animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
   }
+
   .circle2 {
     height: 1vw;
     width: 1vw;
     border-radius: 50%;
     background-color: beige;
     position: relative;
-    top: -1.0666666666666vw;
+    top: -0.885vw;
     left: 15vw;
   }
 
@@ -424,14 +427,50 @@ animation-box {
     }
 
     to {
-      transform: scale(15);
+      transform: scale(25);
     }
   }
-  .col1 iframe{
+
+  .col1 iframe {
     height: 60vw;
     width: 50vw;
-    left:45vw;
-    position:relative;
+    left: 45vw;
+    position: absolute;
+  }
+
+  .text {
+    font-size: 4vw;
+    font-family: "Courier";
+    position: relative;
+    top: -24vw;
+    left: 9.7vw;
+    animation: trump 1s linear forwards 1;
+  }
+  .p{
+    font-family: "Courier";
+    font-size: 4vw;
+  }
+  @keyframes trump {
+    from{
+      position: relative;
+      top: -27vw;
+      opacity: 0;
+    }
+    to{
+      position: relative;
+      top: -24vw;
+      opacity: 1;
+    }
+    
+  }
+
+  .blurb {
+    margin: 2.5em;
+    color: rgba(255, 255, 255, 0);
+    -ms-transform: scale(.9);
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    /* visibility: hidden; */
   }
 
   .show-mobile {
