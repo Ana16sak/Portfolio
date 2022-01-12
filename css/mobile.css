@@ -1,37 +1,161 @@
-@media only screen and (max-device-width: 800px){
-    .show-mobile{
+@media only screen and (max-device-width: 800px) {
+    .show-mobile {
         display: inline-block;
     }
-    
+
     .card {
         background: #fff;
         border-radius: 2px;
         display: inline-block;
         position: relative;
         width: 95%;
-        animation: fade 0.5s ease-out 0.2s forwards 1;
         height: 53vw;
         left: 2.5vw;
     }
+
     .card-5 {
-        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
         animation: rightFadeIn 1s linear forwards 1
-      }
-      
-    .education{
-        background: #fff;
+    }
+
+    .education {
+        background: crimson;
         border-radius: 2px;
-        display: inline-block;
+        display: grid;
         margin: 1rem;
         position: relative;
         width: 75%;
         aspect-ratio: 260/410;
-        animation: fade 0.5s ease-out 0.2s forwards 1;
         height: auto;
         left: 7vw;
-        
+        justify-content: center;
+        align-items: center;
+
     }
-    .show-website{
+
+    .circle {
+        height: 1vw;
+        width: 1vw;
+        border-radius: 50%;
+        background-color: beige;
+        animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
+        position: relative;
+        top: 28.27vw;
+    }
+
+    .circle2 {
+        height: 1vw;
+        width: 1vw;
+        border-radius: 50%;
+        background-color: beige;
+        animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
+        position: relative;
+        top: -31vw;
+    }
+
+    @keyframes grow {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(15);
+        }
+    }
+
+    .Wrapper2 {
+        animation: slide 2s cubic-bezier(1, .01, .52, .68) forwards 1;
+    }
+
+    .Wrapper {
+        animation: slideY 2s linear forwards 1;
+    }
+
+    .Wrapper2L {
+        animation: slideL 2s cubic-bezier(1, .01, .52, .68) forwards 1;
+    }
+
+    .WrapperL {
+        animation: slideYL 2s linear forwards 1;
+    }
+
+
+    @keyframes slideL {
+        0% {
+            transform: translateY(0vw);
+        }
+
+        25% {
+            transform: translateY(-40vw);
+        }
+
+        100% {
+            transform: translateY(30vw);
+        }
+
+    }
+
+    @keyframes slideYL {
+        0% {
+            transform: translateX(0vw);
+        }
+
+        25% {
+            transform: translateX(-10vw);
+        }
+
+        50% {
+            transform: translateX(10vw);
+        }
+
+        75% {
+            transform: translateX(-10vw);
+        }
+
+        100% {
+            transform: translateX(0vw);
+        }
+
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateY(0vw);
+        }
+
+        25% {
+            transform: translateY(40vw);
+        }
+
+        100% {
+            transform: translateY(-30vw);
+        }
+
+    }
+
+    @keyframes slideY {
+        0% {
+            transform: translateX(0vw);
+        }
+
+        25% {
+            transform: translateX(10vw);
+        }
+
+        50% {
+            transform: translateX(-10vw);
+        }
+
+        75% {
+            transform: translateX(10vw);
+        }
+
+        100% {
+            transform: translateX(0vw);
+        }
+    }
+
+    .show-website {
         display: none;
     }
 }
