@@ -312,7 +312,7 @@ animation-box {
     border-radius: 50%;
     background-color: beige;
     position: relative;
-    top: -16vw;
+    top: -1.0666666666666vw;
     left: 15vw;
   }
 
@@ -326,15 +326,15 @@ animation-box {
     }
 
     25% {
-      transform: translateY(-10vw);
+      transform: translateY(-20vw);
     }
 
     50% {
-      transform: translateY(10vw);
+      transform: translateY(0vw);
     }
 
     75% {
-      transform: translateY(-10vw);
+      transform: translateY(-15vw);
     }
 
     100% {
@@ -408,7 +408,7 @@ animation-box {
     }
 
     75% {
-      transform: translateY(10vw);
+      transform: translateY(11Fvw);
     }
 
     100% {

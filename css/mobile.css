@@ -38,9 +38,8 @@
         width: 1vw;
         border-radius: 50%;
         background-color: beige;
-        animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
         position: relative;
-        top: 28.27vw;
+        top: 1.884666666667vw;
     }
 
     .circle2 {
@@ -48,10 +47,12 @@
         width: 1vw;
         border-radius: 50%;
         background-color: beige;
-        animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
         position: relative;
-        top: -31vw;
+        top: -2.066666666667vw;
     }
+    .circle-grow{
+        animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
+      }
 
     @keyframes grow {
         from {
