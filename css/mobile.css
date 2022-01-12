@@ -19,12 +19,14 @@
     }
 
     .education {
+        
         background: crimson;
         border-radius: 2px;
         display: grid;
         margin: 1rem;
         position: relative;
         width: 75%;
+        top: 55vw;
         aspect-ratio: 260/410;
         height: auto;
         left: 7vw;
@@ -155,7 +157,15 @@
             transform: translateX(0vw);
         }
     }
-
+    .col1 iframe{
+        height: 60vw;
+        width: 95vw;
+        left:0vw;
+        top: 118vw;
+        position:relative;
+        margin: auto;
+        display: inline-block;
+      }
     .show-website {
         display: none;
     }

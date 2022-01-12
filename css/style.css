@@ -275,6 +275,9 @@ animation-box {
 }
 
 @media only screen and (min-device-width: 801px) {
+  .show-website {
+    display: grid;
+  }
   .card {
     background: #fff;
     border-radius: 2px;
@@ -290,9 +293,7 @@ animation-box {
     height: 30vw;
   }
 
-  .show-website {
-    display: grid;
-  }
+  
 
   .circle {
     height: 1vw;
@@ -426,7 +427,13 @@ animation-box {
       transform: scale(15);
     }
   }
-  
+  .col1 iframe{
+    height: 60vw;
+    width: 50vw;
+    left:45vw;
+    position:relative;
+  }
+
   .show-mobile {
     display: none;
   }
