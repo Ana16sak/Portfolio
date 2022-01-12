@@ -1,10 +1,12 @@
-
 @import 'https://fonts.googleapis.com/css?family=Roboto';
-html, body {
-	background-color: #fff;
+
+html,
+body {
+  background-color: #fff;
   justify-content: center;
   align-items: center;
 }
+
 /* .container {
   margin-top: 50px;
   box-shadow: 0 0 30px black;
@@ -12,52 +14,69 @@ html, body {
 } */
 
 @keyframes fade {
-  from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-h1.Anabil{
+
+h1.Anabil {
   color: #fff;
-	font-family: "Courier";
-	text-decoration: none;
+  font-family: "Courier";
+  text-decoration: none;
   font-size: 7vw;
   padding-bottom: 1%;
   animation: topFadeIn 1s linear forwards 1;
 }
+
 .card-5 {
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   animation: rightFadeIn 1s linear forwards 1
 }
 
-h1, a, p {
-	color: #fff;
-	font-family: Roboto;
-	text-decoration: none;
+h1,
+a,
+p {
+  color: #fff;
+  font-family: Roboto;
+  text-decoration: none;
 }
+
 p>a {
-	color: #fd084a;
+  color: #fd084a;
 }
+
 .blink {
   animation: blink 0.5s infinite;
 }
-@keyframes blink{
-  to { opacity: .0; }
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
 }
+
 .flex {
-	display: flex;
+  display: flex;
 }
+
 .header-sub-title {
   color: #fff;
   font-family: "Courier";
   font-size: 3vw;
   padding-left: 0.1em;
-  
+
 }
+
 .header-sub-title2 {
   color: #fff;
   font-family: "Courier";
   font-size: 3vw;
   padding-left: 6.1em;
-  
+
 }
 
 animation-box {
@@ -91,6 +110,7 @@ animation-box {
     opacity: 0;
   }
 }
+
 @keyframes topFadeIn {
   0% {
     position: absolute;
@@ -121,7 +141,7 @@ animation-box {
   100% {
     opacity: 0;
   }
-  
+
 }
 
 @keyframes topFadeOutVertical {
@@ -160,6 +180,7 @@ animation-box {
     right: 10rem;
   }
 }
+
 @keyframes rightFadeIn {
   0% {
     position: absolute;
@@ -252,6 +273,7 @@ animation-box {
   animation-delay: 10s;
   animation-duration: 9s;
 }
+
 @media only screen and (min-device-width: 801px) {
   .card {
     background: #fff;
@@ -263,67 +285,82 @@ animation-box {
     animation: fade 0.5s ease-out 0.2s forwards 1;
     height: 54.7vw;
   }
-  .education{
+
+  .education {
     height: 30vw;
   }
-  .show-website{
+
+  .show-website {
     display: grid;
   }
-  .circle{
+
+  .circle {
     height: 1vw;
     width: 1vw;
     border-radius: 50%;
     background-color: beige;
     margin: 15vw;
-    animation: grow 2s cubic-bezier(1,.01,.52,.68) forwards 1;
+    animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
+    
   }
-  .circle2{
+  .circle2 {
     height: 1vw;
     width: 1vw;
     border-radius: 50%;
     background-color: beige;
-    animation: grow 2s cubic-bezier(1,.01,.52,.68) forwards 1;
     position: relative;
-    top:-16vw;
+    top: -16vw;
     left: 15vw;
+    animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
   }
-  .WrapperL{
+
+  .WrapperL {
     animation: slideYL 2s linear forwards 1;
   }
+
   @keyframes slideYL {
-    0%{
+    0% {
       transform: translateY(0vw);
     }
-    25%{
+
+    25% {
       transform: translateY(-10vw);
     }
-    50%{
+
+    50% {
       transform: translateY(10vw);
     }
-    75%{
+
+    75% {
       transform: translateY(-10vw);
     }
-    100%{
+
+    100% {
       transform: translateX(0vw);
     }
-    
+
   }
-  .Wrapper2L{
-    animation: slideL 2s cubic-bezier(1,.01,.52,.68) forwards 1;
+
+  .Wrapper2L {
+    animation: slideL 2s cubic-bezier(1, .01, .52, .68) forwards 1;
   }
+
   @keyframes slideL {
-    0%{
+    0% {
       transform: translateX(0vw);
     }
-    25%{
+
+    25% {
       transform: translateX(-40vw);
     }
-    100%{
+
+    100% {
       transform: translateX(30vw);
     }
-    
+
   }
-  .container-Anabil{
+
+  .container-Anabil {
     width: 100%;
     height: 30vw;
     background-color: crimson;
@@ -331,52 +368,64 @@ animation-box {
     align-items: center;
     display: grid;
   }
-  .Wrapper2{
-    animation: slide 2s cubic-bezier(1,.01,.52,.68) forwards 1;
+
+  .Wrapper2 {
+    animation: slide 2s cubic-bezier(1, .01, .52, .68) forwards 1;
   }
-  .Wrapper{
+
+  .Wrapper {
     animation: slideY 2s linear forwards 1;
   }
+
   @keyframes slide {
-    0%{
+    0% {
       transform: translateX(0vw);
     }
-    25%{
+
+    25% {
       transform: translateX(40vw);
     }
-    100%{
+
+    100% {
       transform: translateX(-30vw);
     }
-    
+
   }
-  
+
   @keyframes slideY {
-    0%{
+    0% {
       transform: translateY(0vw);
     }
-    25%{
+
+    25% {
       transform: translateY(10vw);
     }
-    50%{
+
+    50% {
       transform: translateY(-10vw);
     }
-    75%{
+
+    75% {
       transform: translateY(10vw);
     }
-    100%{
+
+    100% {
       transform: translateX(0vw);
     }
-    
+
   }
+
   @keyframes grow {
-    from{
+    from {
       transform: scale(1);
     }
-    to{
+
+    to {
       transform: scale(15);
     }
   }
-  .show-mobile{
+  
+  .show-mobile {
     display: none;
   }
 }
