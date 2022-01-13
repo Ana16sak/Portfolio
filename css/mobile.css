@@ -3,14 +3,15 @@
         display: inline-block;
     }
 
-    .card {
+    .card-Anabil {
         background: #fff;
-        border-radius: 2px;
-        display: inline-block;
-        position: relative;
-        width: 95%;
-        height: 53vw;
-        left: 2.5vw;
+     border-radius: 2px;
+    display: flex;
+    
+    position: relative;
+    width: 100%;
+    animation: fade 0.5s ease-out 0.2s forwards 1;
+    height: auto;
     }
 
     .card-5 {
@@ -158,10 +159,10 @@
         }
     }
     .col1 iframe{
-        height: 60vw;
+        height: 100vw;
         width: 95vw;
-        left:0vw;
-        top: 118vw;
+        left:2.7vw;
+        top: 13vw;
         position:relative;
         margin: auto;
         display: inline-block;
