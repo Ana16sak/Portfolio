@@ -1,8 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
-
-html,
+ 
+/* html, */
 body {
-  background-color: #fff;
+  background-image: linear-gradient(white,black);
+  background-repeat: no-repeat;
+  background-size: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -436,6 +438,7 @@ animation-box {
   width: 50vw;
   left: 47vw;
   position: absolute;
+  
 }
 
 .text {
@@ -514,7 +517,11 @@ animation-box {
   }
 
 }
-
+.Japanease{
+  width: 40%;
+  position: relative;
+  left: 5vw;
+}
 .show-mobile {
   display: none;
 }

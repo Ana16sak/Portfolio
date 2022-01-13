@@ -167,6 +167,12 @@
         margin: auto;
         display: inline-block;
       }
+      .Japanease{
+        width: 90%;
+        position: relative;
+        top: 500vw;
+        left: 5vw;
+      }
     .show-website {
         display: none;
     }
