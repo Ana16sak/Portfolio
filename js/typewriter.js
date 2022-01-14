@@ -1,40 +1,40 @@
-const words = ["a ML Enthusiast", "a Web Devoloper", "an Aspiring Actuary "];
-let i = 0;
-let timer;
+const words2 = ["a ML Enthusiast", "a Web Devoloper", "an Aspiring Actuary "];
+let j = 0;
+let timer2;
 
-function typingEffect() {
-	let word = words[i].split("");
-	var loopTyping = function() {
-		if (word.length > 0) {
-			document.getElementById('word').innerHTML += word.shift();
+function typingEffect2() {
+	let word2 = words2[j].split("");
+	var loopTyping2 = function() {
+		if (word2.length > 0) {
+			document.getElementById('word').innerHTML += word2.shift();
 		} else {
-			deletingEffect();
+			deletingEffect2();
 			return false;
 		};
-		timer = setTimeout(loopTyping, 200);
+		timer2 = setTimeout(loopTyping2, 200);
 	};
-	loopTyping();
+	loopTyping2();
 };
 
-function deletingEffect() {
-	let word = words[i].split("");
-	var loopDeleting = function() {
-		if (word.length > 0) {
-			word.pop();
-			document.getElementById('word').innerHTML = word.join("");
+function deletingEffect2() {
+	let word2 = words2[j].split("");
+	var loopDeleting2 = function() {
+		if (word2.length > 0) {
+			word2.pop();
+			document.getElementById('word').innerHTML = word2.join("");
 		} else {
-			if (words.length > (i + 1)) {
-				i++;
+			if (words2.length > (j + 1)) {
+				j++;
 			} else {
-				i = 0;
+				j = 0;
 			};
-			typingEffect();
+			typingEffect2();
 			return false;
 		};
-		timer = setTimeout(loopDeleting, 100);
+		timer2 = setTimeout(loopDeleting2, 100);
 	};
-	loopDeleting();
+	loopDeleting2();
 };
 
-typingEffect();
+typingEffect2();
 

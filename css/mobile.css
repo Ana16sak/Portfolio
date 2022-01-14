@@ -3,15 +3,236 @@
         display: inline-block;
     }
 
+    h1,
+    a,
+    p {
+        color: #fff;
+        font-family:Courier;
+        text-decoration: none;
+    }
+
+    p>a {
+        color: #fd084a;
+    }
+
+    .blink {
+        animation: blink 0.5s infinite;
+    }
+
+    @keyframes blink {
+        to {
+            opacity: .0;
+        }
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    animation-box {
+        width: 75%;
+        height: 27.5rem;
+        background-color: blue;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .animation-container {
+        width: 1000rem;
+        height: 30rem;
+    }
+
+    @keyframes topFadeOut {
+        0% {
+            position: absolute;
+            top: -3rem;
+            opacity: 0;
+        }
+
+        75% {
+            position: absolute;
+            top: 25%;
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes topFadeIn {
+        0% {
+            position: absolute;
+            top: -3vw;
+            opacity: 0;
+        }
+
+        100% {
+            position: absolute;
+            top: 25%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes bottomFadeOut {
+        0% {
+            position: absolute;
+            bottom: -5rem;
+            opacity: 0;
+        }
+
+        75% {
+            position: absolute;
+            bottom: 25%;
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+    }
+
+    @keyframes topFadeOutVertical {
+        0% {
+            position: absolute;
+            top: -3rem;
+            opacity: 0;
+        }
+
+        75% {
+            position: absolute;
+            top: 45%;
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes rightFadeInOut {
+        0% {
+            position: absolute;
+            right: -3rem;
+            opacity: 0;
+        }
+
+        75% {
+            position: absolute;
+            right: 10rem;
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            right: 10rem;
+        }
+    }
+
+    @keyframes rightFadeIn {
+        0% {
+            position: absolute;
+            right: -3vw;
+            opacity: 0;
+        }
+
+        100% {
+            position: absolute;
+            right: 0vw;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+        }
+
+        45% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+
+    .first-text {
+        font-size: 4vw;
+        font-family: "Courier";
+        position: absolute;
+        left: 2.5rem;
+        top: 5rem;
+        opacity: 0;
+        animation-name: topFadeOut;
+        animation-duration: 5s;
+        color: white;
+    }
+
+    .second-text {
+        font-family: "Courier";
+        font-size: 3vw;
+        position: absolute;
+        top: 8.5rem;
+        opacity: 0;
+        animation-name: rightFadeInOut;
+        animation-delay: 3s;
+        animation-duration: 6s;
+        color: rgb(255, 255, 255);
+    }
+
+    .third-text {
+        transform: rotate(-90deg);
+        font-family: "Courier";
+        font-size: 2vw;
+        position: absolute;
+        left: 45%;
+        top: 45%;
+        opacity: 0;
+        animation-name: topFadeOutVertical;
+        animation-delay: 7.5s;
+        animation-duration: 6s;
+        color: #A3DDF0;
+        white-space: nowrap;
+    }
+
+    .fourth-text {
+        font-size: 3vw;
+        font-family: "Courier";
+        position: absolute;
+        top: 10.5rem;
+        left: 10%;
+        opacity: 0;
+        color: #F0A3BE;
+        animation-name: fadeInOut;
+        animation-delay: 8.5s;
+        animation-duration: 9s;
+    }
+
+    .fifth-text {
+        font-size: 4vw;
+        font-family: "Courier";
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+        opacity: 0;
+        color: #2b2b2b;
+        animation-name: bottomFadeOut;
+        animation-delay: 10s;
+        animation-duration: 9s;
+    }
+
     .card-Anabil {
         background: #fff;
-     border-radius: 2px;
-    display: flex;
-    
-    position: relative;
-    width: 100%;
-    animation: fade 0.5s ease-out 0.2s forwards 1;
-    height: auto;
+        border-radius: 2px;
+        display: flex;
+
+        position: relative;
+        width: 100%;
+        animation: fade 0.5s ease-out 0.2s forwards 1;
+        height: auto;
     }
 
     .card-5 {
@@ -20,7 +241,7 @@
     }
 
     .education {
-        
+
         background: crimson;
         border-radius: 2px;
         display: grid;
@@ -36,143 +257,39 @@
 
     }
 
-    .circle {
-        height: 1vw;
-        width: 1vw;
-        border-radius: 50%;
-        background-color: beige;
-        position: relative;
-        top: 1.884666666667vw;
-    }
-
-    .circle2 {
-        height: 1vw;
-        width: 1vw;
-        border-radius: 50%;
-        background-color: beige;
-        position: relative;
-        top: -2.066666666667vw;
-    }
-    .circle-grow{
-        animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
-      }
-
-    @keyframes grow {
-        from {
-            transform: scale(1);
-        }
-
-        to {
-            transform: scale(15);
-        }
-    }
-
-    .Wrapper2 {
-        animation: slide 2s cubic-bezier(1, .01, .52, .68) forwards 1;
-    }
-
-    .Wrapper {
-        animation: slideY 2s linear forwards 1;
-    }
-
-    .Wrapper2L {
-        animation: slideL 2s cubic-bezier(1, .01, .52, .68) forwards 1;
-    }
-
-    .WrapperL {
-        animation: slideYL 2s linear forwards 1;
-    }
-
-
-    @keyframes slideL {
-        0% {
-            transform: translateY(0vw);
-        }
-
-        25% {
-            transform: translateY(-40vw);
-        }
-
-        100% {
-            transform: translateY(30vw);
-        }
-
-    }
-
-    @keyframes slideYL {
-        0% {
-            transform: translateX(0vw);
-        }
-
-        25% {
-            transform: translateX(-10vw);
-        }
-
-        50% {
-            transform: translateX(10vw);
-        }
-
-        75% {
-            transform: translateX(-10vw);
-        }
-
-        100% {
-            transform: translateX(0vw);
-        }
-
-    }
-
-    @keyframes slide {
-        0% {
-            transform: translateY(0vw);
-        }
-
-        25% {
-            transform: translateY(40vw);
-        }
-
-        100% {
-            transform: translateY(-30vw);
-        }
-
-    }
-
-    @keyframes slideY {
-        0% {
-            transform: translateX(0vw);
-        }
-
-        25% {
-            transform: translateX(10vw);
-        }
-
-        50% {
-            transform: translateX(-10vw);
-        }
-
-        75% {
-            transform: translateX(10vw);
-        }
-
-        100% {
-            transform: translateX(0vw);
-        }
-    }
-    .col1 iframe{
+    .col1 iframe {
         height: 100vw;
         width: 95vw;
-        left:2.7vw;
+        left: 2.7vw;
         top: 13vw;
-        position:relative;
+        position: relative;
         margin: auto;
         display: inline-block;
-      }
-      .Japanease{
+    }
+
+    .Japanease {
         width: 90%;
         position: relative;
         top: 500vw;
         left: 5vw;
-      }
+    }
+
+    .header-sub-title {
+        color: #fff;
+        font-family: "Courier";
+        font-size: 3vw;
+        padding-left: 0.1em;
+
+    }
+
+    .header-sub-title2 {
+        color: #fff;
+        font-family: "Courier";
+        font-size: 3vw;
+        padding-left: 6.1em;
+
+    }
+
     .show-website {
         display: none;
     }

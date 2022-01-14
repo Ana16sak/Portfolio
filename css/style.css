@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
- 
+
 /* html, */
 body {
-  background-image: linear-gradient(white,black);
+  background-image: linear-gradient(white, black);
   background-repeat: no-repeat;
   background-size: 100%;
   justify-content: center;
@@ -14,514 +14,331 @@ body {
   box-shadow: 0 0 30px black;
   padding:0 15px 0 15px;
 } */
+@media only screen and (min-device-width: 801px) {
+  .show-website{
+    display: inline-block;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
 
-@keyframes fade {
-  from {
-    opacity: 0;
+    to {
+      opacity: 1;
+    }
   }
 
-  to {
-    opacity: 1;
-  }
-}
-
-h1.Anabil {
-  color: #fff;
-  font-family: "Courier";
-  text-decoration: none;
-  font-size: 7vw;
-  padding-bottom: 1%;
-  animation: topFadeIn 1s linear forwards 1;
-}
-
-.card-5 {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  animation: rightFadeIn 1s linear forwards 1
-}
-
-h1,
-a,
-p {
-  color: #fff;
-  font-family: Roboto;
-  text-decoration: none;
-}
-
-p>a {
-  color: #fd084a;
-}
-
-.blink {
-  animation: blink 0.5s infinite;
-}
-
-@keyframes blink {
-  to {
-    opacity: .0;
-  }
-}
-
-.flex {
-  display: flex;
-}
-
-.header-sub-title {
-  color: #fff;
-  font-family: "Courier";
-  font-size: 3vw;
-  padding-left: 0.1em;
-
-}
-
-.header-sub-title2 {
-  color: #fff;
-  font-family: "Courier";
-  font-size: 3vw;
-  padding-left: 6.1em;
-
-}
-
-animation-box {
-  width: 75%;
-  height: 27.5rem;
-  background-color: blue;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.animation-container {
-  width: 1000rem;
-  height: 30rem;
-}
-
-@keyframes topFadeOut {
-  0% {
-    position: absolute;
-    top: -3rem;
-    opacity: 0;
+  h1.Anabil {
+    color: #fff;
+    font-family: "Courier";
+    text-decoration: none;
+    font-size: 7vw;
+    padding-bottom: 1%;
+    animation: topFadeIn 1s linear forwards 1;
   }
 
-  75% {
-    position: absolute;
-    top: 25%;
-    opacity: 1;
+  .card-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    animation: rightFadeIn 1s linear forwards 1
   }
 
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes topFadeIn {
-  0% {
-    position: absolute;
-    top: -3vw;
-    opacity: 0;
+  h1,
+  a,
+  p {
+    color: #fff;
+    font-family: Roboto;
+    text-decoration: none;
   }
 
-  100% {
-    position: absolute;
-    top: 25%;
-    opacity: 1;
-  }
-}
-
-@keyframes bottomFadeOut {
-  0% {
-    position: absolute;
-    bottom: -5rem;
-    opacity: 0;
+  p>a {
+    color: #fd084a;
   }
 
-  75% {
-    position: absolute;
-    bottom: 25%;
-    opacity: 1;
+  .blink {
+    animation: blink 0.5s infinite;
   }
 
-  100% {
-    opacity: 0;
+  @keyframes blink {
+    to {
+      opacity: .0;
+    }
   }
 
-}
-
-@keyframes topFadeOutVertical {
-  0% {
-    position: absolute;
-    top: -3rem;
-    opacity: 0;
+  .flex {
+    display: flex;
   }
 
-  75% {
-    position: absolute;
-    top: 45%;
-    opacity: 1;
+  .header-sub-title {
+    color: #fff;
+    font-family: "Courier";
+    font-size: 3vw;
+    padding-left: 0.1em;
+
   }
 
-  100% {
-    opacity: 0;
-  }
-}
+  .header-sub-title2 {
+    color: #fff;
+    font-family: "Courier";
+    font-size: 3vw;
+    padding-left: 6.1em;
 
-@keyframes rightFadeInOut {
-  0% {
-    position: absolute;
-    right: -3rem;
-    opacity: 0;
   }
 
-  75% {
-    position: absolute;
-    right: 10rem;
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    right: 10rem;
-  }
-}
-
-@keyframes rightFadeIn {
-  0% {
-    position: absolute;
-    right: -3vw;
-    opacity: 0;
-  }
-
-  100% {
-    position: absolute;
-    right: 0vw;
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-
-  45% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0%;
-  }
-}
-
-.first-text {
-  font-size: 4vw;
-  font-family: "Courier";
-  position: absolute;
-  left: 2.5rem;
-  top: 5rem;
-  opacity: 0;
-  animation-name: topFadeOut;
-  animation-duration: 5s;
-  color: white;
-}
-
-.second-text {
-  font-family: "Courier";
-  font-size: 3vw;
-  position: absolute;
-  top: 8.5rem;
-  opacity: 0;
-  animation-name: rightFadeInOut;
-  animation-delay: 3s;
-  animation-duration: 6s;
-  color: rgb(255, 255, 255);
-}
-
-.third-text {
-  transform: rotate(-90deg);
-  font-family: "Courier";
-  font-size: 2vw;
-  position: absolute;
-  left: 45%;
-  top: 45%;
-  opacity: 0;
-  animation-name: topFadeOutVertical;
-  animation-delay: 7.5s;
-  animation-duration: 6s;
-  color: #A3DDF0;
-  white-space: nowrap;
-}
-
-.fourth-text {
-  font-size: 3vw;
-  font-family: "Courier";
-  position: absolute;
-  top: 10.5rem;
-  left: 10%;
-  opacity: 0;
-  color: #F0A3BE;
-  animation-name: fadeInOut;
-  animation-delay: 8.5s;
-  animation-duration: 9s;
-}
-
-.fifth-text {
-  font-size: 4vw;
-  font-family: "Courier";
-  position: absolute;
-  left: 5%;
-  bottom: 25%;
-  opacity: 0;
-  color: #2b2b2b;
-  animation-name: bottomFadeOut;
-  animation-delay: 10s;
-  animation-duration: 9s;
-}
-
-
-.show-website {
-  display: grid;
-}
-
-.card-Anabil {
-  background: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  
-  position: relative;
-  width: 100%;
-  animation: fade 0.5s ease-out 0.2s forwards 1;
-  height: auto;
-}
-
-.education {
-  height: 30vw;
-}
-
-
-
-.circle {
-  height: 1vw;
-  width: 1vw;
-  border-radius: 50%;
-  background-color: beige;
-  margin: 15vw;
-
-
-}
-
-.circle-grow {
-  animation: grow 2s cubic-bezier(1, .01, .52, .68) forwards 1;
-}
-
-.circle2 {
-  height: 1vw;
-  width: 1vw;
-  border-radius: 50%;
-  background-color: beige;
-  position: relative;
-  top: -0.885vw;
-  left: 15vw;
-}
-
-.WrapperL {
-  animation: slideYL 2s linear forwards 1;
-}
-
-@keyframes slideYL {
-  0% {
-    transform: translateY(0vw);
-  }
-
-  25% {
-    transform: translateY(-30vw);
-  }
-
-  50% {
-    transform: translateY(-10vw);
-  }
-
-  75% {
-    transform: translateY(-15vw);
-  }
-
-  100% {
-    transform: translateX(0vw);
-  }
-
-}
-
-.Wrapper2L {
-  animation: slideL 2s cubic-bezier(1, .01, .52, .68) forwards 1;
-}
-
-@keyframes slideL {
-  0% {
-    transform: translateX(0vw);
-  }
-
-  25% {
-    transform: translateX(-40vw);
-  }
-
-  100% {
-    transform: translateX(30vw);
-  }
-
-}
-
-.container-Anabil {
-  width: 100%;
-  height: 35vw;
-  background-color: crimson;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-}
-
-.Wrapper2 {
-  animation: slide 2s cubic-bezier(1, .01, .52, .68) forwards 1;
-}
-
-.Wrapper {
-  animation: slideY 2s linear forwards 1;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0vw);
-  }
-
-  25% {
-    transform: translateX(40vw);
-  }
-
-  100% {
-    transform: translateX(-30vw);
-  }
-
-}
-
-@keyframes slideY {
-  0% {
-    transform: translateY(0vw);
-  }
-
-  25% {
-    transform: translateY(10vw);
-  }
-
-  50% {
-    transform: translateY(-10vw);
-  }
-
-  75% {
-    transform: translateY(11Fvw);
-  }
-
-  100% {
-    transform: translateX(0vw);
-  }
-
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(25);
-  }
-}
-
-.col1 iframe {
-  height: 60vw;
-  width: 50vw;
-  left: 47vw;
-  position: absolute;
-  
-}
-
-.text {
-  font-size: 4vw;
-  font-family: "Courier";
-  position: relative;
-  top: -24vw;
-  left: 8.7vw;
-  animation: trump 1s linear forwards 1;
-}
-
-.p {
-  font-family: "Courier";
-  font-size: 4vw;
-}
-
-@keyframes trump {
-  from {
+  animation-box {
+    width: 75%;
+    height: 27.5rem;
+    background-color: blue;
+    margin: 0 auto;
+    overflow: hidden;
     position: relative;
-    top: -27vw;
-    opacity: 0;
   }
 
-  to {
+  .animation-container {
+    width: 1000rem;
+    height: 30rem;
+  }
+
+  @keyframes topFadeOut {
+    0% {
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+
+    75% {
+      position: absolute;
+      top: 25%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes topFadeIn {
+    0% {
+      position: absolute;
+      top: -3vw;
+      opacity: 0;
+    }
+
+    100% {
+      position: absolute;
+      top: 25%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes bottomFadeOut {
+    0% {
+      position: absolute;
+      bottom: -5rem;
+      opacity: 0;
+    }
+
+    75% {
+      position: absolute;
+      bottom: 25%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+
+  }
+
+  @keyframes topFadeOutVertical {
+    0% {
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+
+    75% {
+      position: absolute;
+      top: 45%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes rightFadeInOut {
+    0% {
+      position: absolute;
+      right: -3rem;
+      opacity: 0;
+    }
+
+    75% {
+      position: absolute;
+      right: 10rem;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      right: 10rem;
+    }
+  }
+
+  @keyframes rightFadeIn {
+    0% {
+      position: absolute;
+      right: -3vw;
+      opacity: 0;
+    }
+
+    100% {
+      position: absolute;
+      right: 0vw;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+
+    45% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  .first-text {
+    font-size: 4vw;
+    font-family: "Courier";
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+    opacity: 0;
+    animation-name: topFadeOut;
+    animation-duration: 5s;
+    color: white;
+  }
+
+  .second-text {
+    font-family: "Courier";
+    font-size: 3vw;
+    position: absolute;
+    top: 8.5rem;
+    opacity: 0;
+    animation-name: rightFadeInOut;
+    animation-delay: 3s;
+    animation-duration: 6s;
+    color: rgb(255, 255, 255);
+  }
+
+  .third-text {
+    transform: rotate(-90deg);
+    font-family: "Courier";
+    font-size: 2vw;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    opacity: 0;
+    animation-name: topFadeOutVertical;
+    animation-delay: 7.5s;
+    animation-duration: 6s;
+    color: #A3DDF0;
+    white-space: nowrap;
+  }
+
+  .fourth-text {
+    font-size: 3vw;
+    font-family: "Courier";
+    position: absolute;
+    top: 10.5rem;
+    left: 10%;
+    opacity: 0;
+    color: #F0A3BE;
+    animation-name: fadeInOut;
+    animation-delay: 8.5s;
+    animation-duration: 9s;
+  }
+
+  .fifth-text {
+    font-size: 4vw;
+    font-family: "Courier";
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+    opacity: 0;
+    color: #2b2b2b;
+    animation-name: bottomFadeOut;
+    animation-delay: 10s;
+    animation-duration: 9s;
+  }
+
+
+  .show-website {
+    display: grid;
+  }
+
+  .card-Anabil {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+
+    position: relative;
+    width: 100%;
+    animation: fade 0.5s ease-out 0.2s forwards 1;
+    height: auto;
+  }
+
+  .col1 iframe {
+    height: 60vw;
+    width: 50vw;
+    left: 47vw;
+    position: absolute;
+
+  }
+
+  .text {
+    font-size: 4vw;
+    font-family: "Courier";
     position: relative;
     top: -24vw;
-    opacity: 1;
+    left: 8.7vw;
+    animation: trump 1s linear forwards 1;
   }
 
-}
+  .p {
+    font-family: "Courier";
+    font-size: 4vw;
+  }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
+  @keyframes trump {
+    from {
+      position: relative;
+      top: -27vw;
+      opacity: 0;
+    }
 
-}
+    to {
+      position: relative;
+      top: -24vw;
+      opacity: 1;
+    }
 
-.card-animation {
-  animation: edu 2s linear forwards 1;
-}
+  }
 
-.card-animation2 {
-  animation: edu2 2s linear forwards 1;
-}
-
-@keyframes edu {
-  from {
+  .Japanease {
+    width: 40%;
     position: relative;
-    top: -36vh;
-    opacity: 0;
+    left: 5vw;
   }
 
-  to {
-    position: relative;
-    top: -52vh;
-    opacity: 1;
+  .show-mobile {
+    display: none;
   }
-
-}
-
-@keyframes edu2 {
-  from {
-    position: relative;
-    top: -63vh;
-    left: 33vw;
-    opacity: 0;
-  }
-
-  to {
-    position: relative;
-    top: -52vh;
-    left: 33vw;
-    opacity: 1;
-  }
-
-}
-.Japanease{
-  width: 40%;
-  position: relative;
-  left: 5vw;
-}
-.show-mobile {
-  display: none;
 }
